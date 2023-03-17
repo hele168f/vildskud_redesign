@@ -88,3 +88,18 @@
       padding: 12px;
     }
   }
+
+  .bg-white {
+    background-color: #ffffff;
+  }
+  
+  /* Afrundede hjørner */
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  /* Billederne skal tage 100% af pladsen i deres container */
+  img {
+    width: 100%;
+    height: auto;
+  }
