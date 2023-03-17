@@ -9,6 +9,8 @@ module.exports = {
         button: "#1F51FF",
         buttonHover: "#1A3593",
         footer: "#441E51",
+        theme2: "#1F51FF",
+        themeHover: "#FF8DE9"
       },
 
       fontFamily: {
