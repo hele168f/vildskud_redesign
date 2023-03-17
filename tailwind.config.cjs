@@ -6,8 +6,8 @@ module.exports = {
       colors: {
         body: "#291430",
         theme: "#FF31D8",
-        button: "#8321FF",
-        buttonHover: "#4B188B",
+        button: "#1F51FF",
+        buttonHover: "#1A3593",
       },
 
       fontFamily: {

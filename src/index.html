@@ -8,42 +8,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     <title>Vildskud</title>
   </head>
   <body class="grid place-items-center  bg-body">
-    <nav class="flex items-center justify-between flex-wrap p-6 w-full">
-      <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <img class="h-8 w-8" src="logo.png" alt="Logo">
-      </div>
-      <div class="flex-grow text-center">
-        <span class="font-semibold text-sm text-white">2/6 - 6/6</span>
-      </div>
-      <div class="block lg:hidden">
-        <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Menu</title>
-            <path d="M0 3h20v2H0zm0 6h20v2H0zm0 6h20v2H0z"/>
-          </svg>
-        </button>
-      </div>
-      <div class="hidden lg:block">
-        <a href="#" class="inline-block text-gray-200 hover:text-white mr-4">
-          Forside
-        </a>
-        <a href="#" class="inline-block text-gray-200 hover:text-white mr-4">
-          Program
-        </a>
-        <a href="#" class="inline-block text-gray-200 hover:text-white mr-4">
-          Billetter
-        </a>
-        <a href="#" class="inline-block text-gray-200 hover:text-white mr-4">
-          Frivillige
-        </a>
-        <a href="#" class="inline-block text-gray-200 hover:text-white">
-          Om festivalen
-        </a>
-      </div>
+    <nav class="nav">
+      <div class="logo"><h1>Vildskud + logo</h1></div>
+      <div><p>2/6 - 6/6</p></div>
+      <div class="openMenu"><i class="fa fa-bars"></i></div>
+      <ul class="mainMenu">
+        <li>
+          <a href="#">Forside</a>
+        </li>
+        <li>
+          <a href="#">Billetter</a>
+        </li>
+        <li>
+          <a href="#">Program</a>
+        </li>
+        <li>
+          <a href="#">Frivillig</a>
+        </li>
+        <li>
+          <a href="#">Om festivalen</a>
+        </li>
+        <div class="closeMenu"><i class="fa fa-times"></i></div>
+        <span class="icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+        </span>
+      </ul>
     </nav>
+   
+    
 
     <main class="py-36 p-8">
       <h1 class="text-theme font-Monoton text-5xl">OPLEV</h1>
