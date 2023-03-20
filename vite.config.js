@@ -23,6 +23,7 @@ export default defineConfig({
         privatliv: resolve(__dirname, "src/privatliv.html"),
         program: resolve(__dirname, "src/program.html"),
         venues: resolve(__dirname, "src/venues.html"),
+        sitemaphtml: resolve(__dirname, "src/sitemap.html"),
       },
     },
   },
