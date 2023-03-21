@@ -31,3 +31,16 @@ let menu = document.getElementById("menu");
 const showMenu = (flag) => {
   menu.classList.toggle("hidden");
 };
+
+
+const cookieConsent = document.querySelector('#cookie-consent');
+  const cookieAcceptButton = document.querySelector('#cookie-accept');
+  const cookieDenyButton = document.querySelector('#cookie-deny');
+
+  cookieAcceptButton.addEventListener('click', () => {
+    cookieConsent.remove();
+  });
+
+  cookieDenyButton.addEventListener('click', () => {
+    cookieConsent.remove();
+  });
