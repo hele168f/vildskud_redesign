@@ -59,3 +59,13 @@ const handleReadMore = (e) => {
 acceptAllBtn.addEventListener('click', handleAcceptAll);
 rejectAllBtn.addEventListener('click', handleRejectAll);
 readMoreLink.addEventListener('click', handleReadMore);
+
+// funktion der lukker cookieboksen ned igen
+
+acceptAllBtn.addEventListener('click', () => {
+    cookieBox.classList.add('hidden');
+  });
+  
+  rejectAllBtn.addEventListener('click', () => {
+    cookieBox.classList.add('hidden');
+  });
