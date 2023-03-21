@@ -44,17 +44,17 @@
         </span>
       </ul>
     </nav>
-    <div class="fixed z-50 inset-0 flex justify-center items-center bg-black bg-opacity-50">
-      <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
-        <h2 class="text-lg font-medium mb-4">Cookiepolitik</h2>
-        <p class="mb-4">Vi bruger cookies til at forbedre din brugeroplevelse på vores website. Ved at fortsætte accepterer du vores brug af cookies.</p>
-        <div class="flex justify-between items-center">
-          <button class="bg-blue-500 text-white font-medium py-2 px-4 rounded-lg mr-4 hover:bg-blue-600" id="accept-all-btn">Accepter alle</button>
-          <button class="bg-gray-300 text-gray-700 font-medium py-2 px-4 rounded-lg hover:bg-gray-400" id="reject-all-btn">Afvis alle</button>
-          <a href="#" class="text-blue-500 hover:underline" id="read-more-link">Læs mere om cookies</a>
+    <div class="fixed z-50 top-0 left-0 w-screen h-screen bg-gray-700 bg-opacity-60 flex justify-center items-center" id="cookie-box">
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <h2 class="text-lg font-medium mb-4">Vi anvender cookies</h2>
+        <p class="mb-4">Vi bruger cookies for at forbedre din oplevelse på vores hjemmeside. Læs mere om vores cookie-politik <a href="#">her</a>.</p>
+        <div class="flex justify-center">
+          <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded mr-6" onclick="acceptAll()">Accepter alle</button>
+          <button class="bg-gray-400 hover:bg-gray-500 text-white py-2 px-6 rounded" onclick="closeCookieBox()">Afvis alle</button>
         </div>
       </div>
     </div>
+    
    
     <main class="py-32 p-8 lg:min-h-screen">
       

@@ -27,45 +27,38 @@ function close(){
 }
 
 // Cookie boks
-const cookieBox = document.querySelector('.cookie-box');
-const acceptAllBtn = document.querySelector('#accept-all-btn');
-const rejectAllBtn = document.querySelector('#reject-all-btn');
-const readMoreLink = document.querySelector('#read-more-link');
-
-// Function to hide the cookie box
-const hideCookieBox = () => {
-  cookieBox.style.display = 'none';
-}
-
-// Function to handle the accept all button click
-const handleAcceptAll = () => {
-  // TODO: Set all cookies to accepted
-  hideCookieBox();
-}
-
-// Function to handle the reject all button click
-const handleRejectAll = () => {
-  // TODO: Set all cookies to rejected
-  hideCookieBox();
-}
-
-// Function to handle the read more link click
-const handleReadMore = (e) => {
-  e.preventDefault();
-  // TODO: Show more information about cookies
-}
-
-// Add event listeners to the buttons and link
-acceptAllBtn.addEventListener('click', handleAcceptAll);
-rejectAllBtn.addEventListener('click', handleRejectAll);
-readMoreLink.addEventListener('click', handleReadMore);
-
-// funktion der lukker cookieboksen ned igen
-
-acceptAllBtn.addEventListener('click', () => {
-    cookieBox.classList.add('hidden');
-  });
+function closeCookieBox() {
+    setCookie('cookieAccepted', 'false', 30);
+    document.querySelector('#cookie-box').classList.add('hidden');
+  }
   
-  rejectAllBtn.addEventListener('click', () => {
-    cookieBox.classList.add('hidden');
-  });
+  function acceptAll() {
+    setCookie('cookieAccepted', 'true', 30);
+    document.querySelector('#cookie-box').classList.add('hidden');
+  }
+  
+  function setCookie(name, value, days) {
+    var expires = '';
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = '; expires=' + date.toUTCString();
+    }
+    document.cookie = name + '=' + (value || '') + expires + '; path=/';
+  }
+  
+  function getCookie(name) {
+    var nameEQ = name + '=';
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+  
+  var cookieAccepted = getCookie('cookieAccepted');
+  if (cookieAccepted === null) {
+    document.querySelector('#cookie-box').classList.remove('hidden');
+  }
