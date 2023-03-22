@@ -16,6 +16,10 @@ module.exports = {
       fontFamily: {
         Monoton: "'Monoton', cursive;",
       },
+
+      boxShadow: {
+        neon: '0 0 0.5em 0 #1F51FF',
+      }
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
