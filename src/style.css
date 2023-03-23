@@ -180,8 +180,7 @@ img {
 }
 
 #counter {
-  color: #291430;
-  background-color: #291430;
-  opacity: 0;
+  color: black;
+  background-color: transparent;
   border: none;
 }
