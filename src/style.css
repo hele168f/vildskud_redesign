@@ -3,153 +3,143 @@
 @tailwind utilities;
 
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-  }
-  body {
-  }
-  nav {
-    color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100% ;
-  }
-  nav .mainMenu {
-    display: flex;
-    list-style: none;
-  }
-  nav .mainMenu li a {
-    display: inline-block;
-    padding: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    transition: 0.2s ease;
-  }
-  nav .openMenu {
-    font-size: 2rem;
-    margin: 20px;
-    display: none;
-    cursor: pointer;
-  }
-  nav .mainMenu .closeMenu,
-  .icons i {
-    font-size: 2rem;
-    display: none;
-    cursor: pointer;
-  }
-  .fa-facebook:hover {
-    color: rgb(85, 0, 255);;
-  }
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+}
+nav {
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+.fa-facebook:hover {
+  color: rgb(85, 0, 255);
+}
 
-  .fa-instagram:hover {
-    color: rgb(85, 0, 255);
-  }
-  
-  nav .logo {
-    margin: 6px;
-    cursor: pointer;
-    text-transform: uppercase;
-  }
-  
-    nav .mainMenu {
-      height: 100vh;
-      position: fixed;
-      top: 0px;
-      right: 0px;
-      left: 0px;
-      z-index: 10;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: #FF31D8;
-      transition: top 1s ease 0s;
-      display: none;
-    }
-    nav .mainMenu .closeMenu {
-      display: block;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
-    nav .openMenu {
-      display: block;
-    }
-    nav .mainMenu li a:hover {
-      background: none;
-      color: rgb(255, 123, 0);
-    }
-    .icons i {
-      display: inline-block;
-      padding: 12px;
-    }
-  
+.fa-instagram:hover {
+  color: rgb(85, 0, 255);
+}
 
-  .bg-white {
-    background-color: #ffffff;
-  }
-  
-  /* Afrundede hjørner */
-  .rounded-lg {
-    border-radius: 0.5rem;
-  }
-  
-  /* Billederne skal tage 100% af pladsen i deres container */
-  img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .hidden {
-    display: none;
-  }
+nav .logo {
+  margin: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
 
+nav .mainMenu {
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ff31d8;
+  transition: top 1s ease 0s;
+  display: none;
+}
+nav .mainMenu .closeMenu {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+nav .openMenu {
+  display: block;
+}
+nav .mainMenu li a:hover {
+  background: none;
+  color: rgb(255, 123, 0);
+}
+.icons i {
+  display: inline-block;
+  padding: 12px;
+}
 
+.bg-white {
+  background-color: #ffffff;
+}
 
+/* Afrundede hjørner */
+.rounded-lg {
+  border-radius: 0.5rem;
+}
 
-  /* CTA forside */
-  .neon-button {
-  
-    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
-    position: relative;
-    z-index: -1;
-  }
-  
-  .neon-button::before {
-    pointer-events: none;
-    content: "";
-    position: absolute;
-    background: var(--clr-neon);
-    top: 120%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  
-    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
-    filter: blur(1.5em);
-    opacity: 0.5;
-  }
-  
+/* Billederne skal tage 100% af pladsen i deres container */
+img {
+  width: 100%;
+  height: auto;
+}
 
-  
- 
+.hidden {
+  display: none;
+}
 
-  :root {
-    --clr-neon: #1F51FF;
-    --clr-bg: hsl(323 21% 16%);
-  }
+/* CTA forside */
+.neon-button {
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  position: relative;
+  z-index: -1;
+}
 
+.neon-button::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--clr-neon);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
-  /* Button styles */
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1.5em);
+  opacity: 0.5;
+}
+
+:root {
+  --clr-neon: #1f51ff;
+  --clr-bg: hsl(323 21% 16%);
+}
+
+/* Button styles */
 .bg-gray-200 {
   background-color: #edf2f7;
 }
 
 .text-gray-700 {
-  color: #FF31D8;
+  color: #ff31d8;
 }
 
 .py-2 {
@@ -190,6 +180,8 @@
 }
 
 #counter {
-  color:#FF31D8;
+  color: #291430;
+  background-color: #291430;
+  opacity: 0;
+  border: none;
 }
- 
