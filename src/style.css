@@ -34,19 +34,7 @@ nav .openMenu {
   display: none;
   cursor: pointer;
 }
-nav .mainMenu .closeMenu,
-.icons i {
-  font-size: 2rem;
-  display: none;
-  cursor: pointer;
-}
-.fa-facebook:hover {
-  color: rgb(85, 0, 255);
-}
 
-.fa-instagram:hover {
-  color: rgb(85, 0, 255);
-}
 
 nav .logo {
   margin: 6px;
@@ -79,7 +67,7 @@ nav .openMenu {
 }
 nav .mainMenu li a:hover {
   background: none;
-  color: rgb(255, 123, 0);
+  color: rgb(49, 8, 50);
 }
 .icons i {
   display: inline-block;
