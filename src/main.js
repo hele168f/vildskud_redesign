@@ -45,10 +45,3 @@ const cookieConsent = document.querySelector('#cookie-consent');
     cookieConsent.remove();
   });
 
-  const billetKnap = document.querySelector("#billet_knap");
-              
-                    function skiftFarve() {
-                      billetKnap.style.backgroundColor = "red";
-                    }
-              
-                    billetKnap.addEventListener("click", skiftFarve);
