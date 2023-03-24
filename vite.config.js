@@ -24,7 +24,6 @@ export default defineConfig({
         program: resolve(__dirname, "src/program.html"),
         venues: resolve(__dirname, "src/venues.html"),
         sitemaphtml: resolve(__dirname, "src/sitemap.html"),
-        bilhtml: resolve(__dirname, "src/bil.html"),
         js: resolve(__dirname, "src/main.js"),
       },
     },
