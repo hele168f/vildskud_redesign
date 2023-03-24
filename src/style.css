@@ -113,6 +113,13 @@ img {
   opacity: 0.5;
   z-index: -2;
 }
+@media only screen and (max-width: 600px) {
+  .neon-button::before {
+    top: 80%;
+    width: 70%;
+    left: 15%;
+  }
+}
 
 :root {
   --clr-neon: #1f51ff;
