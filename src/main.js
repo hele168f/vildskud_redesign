@@ -45,3 +45,7 @@ const cookieConsent = document.querySelector('#cookie-consent');
     cookieConsent.remove();
   });
 
+
+
+  //knapper til billetsiden
+

@@ -64,7 +64,37 @@
               <div class="mt-10 text-white">
                 <p>Tirsdag 2/6</p>
                 <div class="grid grid-cols-3 gap-4">
-                  <div
+                  <button id="button" class=" cursor-pointer rounded-xl border-2 py-5 border-theme hover:bg-theme" onclick="toggleCounter()">16:00</button>
+                  <div id="counter" class="rounded-xl py-5 absolute hidden bg-theme text-white flex justify-between w-20 pt-10">
+                    <button onclick="decrementCounter()" class="text-white flex ">&minus;</button>
+                    <span id="counter-value" class=" text-white flex ">0</span>
+                    <button onclick="incrementCounter()" class=" text-white flex ">&plus;</button>
+                  </div>
+                  <script>
+          
+                    function toggleCounter() {
+                    var counter = document.getElementById("counter");
+                    counter.classList.toggle("hidden");
+                  }
+
+                  function incrementCounter() {
+                    var counterValue = document.getElementById("counter-value");
+                    var value = parseInt(counterValue.textContent);
+                    counterValue.textContent = value + 1;
+                  }
+
+                  function decrementCounter() {
+                    var counterValue = document.getElementById("counter-value");
+                    var value = parseInt(counterValue.textContent);
+                    counterValue.textContent = value - 1;
+                    
+                    if (value <= 1) {
+                      toggleCounter();
+                      counterValue.textContent = 0;
+                    }
+                  }
+                  </script>
+                  <!-- <div
                     class="cursor-pointer rounded-xl border-2 border-theme bg-none py-5 text-center hover:bg-theme"
                     id="billet_knap"
                   >
@@ -84,45 +114,11 @@
                         +
                       </button>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
-
-                <script>
-                  const billetKnap = document.querySelector("#billet_knap");
-
-                  function skiftFarve() {
-                    billetKnap.style.backgroundColor = "#FF31D8";
-                  }
-
-                  billetKnap.addEventListener("click", skiftFarve);
-                </script>
-                <script>
-                  function skiftFarve() {
-                    billetKnap.style.backgroundColor = "#FF31D8";
-                  }
-
-                  billetKnap.addEventListener("click", skiftFarve);
-
-                  const minusBtn = document.getElementById("minusBtn");
-                  const plusBtn = document.getElementById("plusBtn");
-                  const counter = document.getElementById("counter");
-
-                  let count = 0;
-
-                  minusBtn.addEventListener("click", () => {
-                    if (count > 0) {
-                      count--;
-                      counter.value = count;
-                    }
-                  });
-
-                  plusBtn.addEventListener("click", () => {
-                    count++;
-                    counter.value = count;
-                  });
-                </script>
+                
               </div>
-
+              
               <div class="mt-4 text-white">
                 <p>Onsdag 3/6</p>
                 <div class="grid grid-cols-3 gap-4">
@@ -390,24 +386,14 @@
               </div>
             </div>
           </div>
-
-          <div class="fixed bottom-0 right-0 mb-5 mr-2">
-            <button
-              id="fab"
-              class="rounded-full bg-blue-500 py-4 px-6 font-bold text-white shadow-inherit hover:bg-blue-700"
-            >
-              <i class="fas fa-shopping-cart"></i>
-            </button>
-          </div>
         </div>
       </div>
 
       <div class="fixed bottom-0 right-0 mb-5 mr-2">
         <button
-          id="fab"
           class="rounded-full bg-blue-500 py-4 px-6 font-bold text-white hover:bg-blue-700"
         >
-          <i class="fas fa-shopping-cart"></i>
+          <i><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16"> <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z" fill="white"></path> </svg></i>
         </button>
       </div>
     </main>
@@ -427,12 +413,12 @@
           <ul class="list-none">
             <li>
               <a href="https://www.instagram.com/vildskud_festival/"
-                ><i class="fab fa-instagram mr-2"></i>Instagram</a
+                >Instagram</a
               >
             </li>
             <li>
               <a href="https://www.facebook.com/vildskudfestival/"
-                ><i class="fab fa-facebook mr-2"></i>Facebook</a
+                >Facebook</a
               >
             </li>
           </ul>
