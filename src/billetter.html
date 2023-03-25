@@ -125,28 +125,29 @@
             <div>
               <div class="mt-10 text-white">
                 <p itemprop="startDate">Tirsdag 2/6</p>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid mt-4 grid-cols-2 lg:grid-cols-3 gap-4">
                   <button
                     id="button"
                     class="cursor-pointer rounded-xl border-2 border-theme py-5 hover:bg-theme" itemprop="offers" itemscope itemtype="http://schema.org/Offer"
                     onclick="toggleCounter()"> <meta itemprop="priceCurrency" content="DKK">
                     <meta itemprop="price" content="120">
                     <span>16:00</span>
+                    
                   </button>
                   <div
                     id="counter"
-                    class="absolute flex hidden w-20 justify-between rounded-xl bg-theme py-5 pt-10 text-white"
+                    class="absolute flex hidden lg:w-28 w-32 justify-between rounded-xl bg-theme  pt-10 text-white"
                   >
                     <button
                       onclick="decrementCounter()"
-                      class="flex text-white"
+                      class="flex text-white pl-2"
                     >
                       &minus;
                     </button>
-                    <span id="counter-value" class="flex text-white">0</span>
+                    <span id="counter-value" class="flex text-white">1</span>
                     <button
                       onclick="incrementCounter()"
-                      class="flex text-white"
+                      class="flex text-white pr-2"
                     >
                       &plus;
                     </button>
@@ -176,33 +177,13 @@
                       }
                     }
                   </script>
-                  <!-- <div
-                    class="cursor-pointer rounded-xl border-2 border-theme bg-none py-5 text-center hover:bg-theme"
-                    id="billet_knap"
-                  >
-                    <p>16:00</p>
-                    <div class="flex items-center justify-center">
-                      <button id="minusBtn" class="rounded-l py-2 px-4 font-bold text-black">-</button>
-                      <input
-                        id="counter"
-                        type="text"
-                        class="w-16 border-t border-b py-2 px-4 text-center text-black"
-                        value="0"
-                      />
-                      <button
-                        id="plusBtn"
-                        class="rounded-r py-2 px-4 font-bold text-black"
-                      >
-                        +
-                      </button>
-                    </div>
-                  </div> -->
+                   
                 </div>
               </div>
 
               <div class="mt-4 text-white">
                 <p itemprop="startDate">Onsdag 3/6</p>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid mt-4 grid-cols-2 lg:grid-cols-3 gap-4">
                   <div
                     class="cursor-pointer rounded-xl border-2 border-theme bg-none py-5 text-center hover:bg-theme"
                     id="billet_knap" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
@@ -228,7 +209,7 @@
             <div>
               <div class="mt-10 text-white">
                 <p itemprop="startDate">Tirsdag 2/6</p>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid mt-4 grid-cols-2 lg:grid-cols-3 gap-4">
                   <div
                     class="cursor-pointer rounded-xl border-2 border-theme bg-none py-5 text-center hover:bg-theme"
                     id="billet_knap" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
@@ -241,7 +222,7 @@
 
               <div class="mt-4 text-white">
                 <p itemprop="startDate">Onsdag 3/6</p>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid mt-4 grid-cols-2 lg:grid-cols-3 gap-4">
                   <div
                     class="cursor-pointer rounded-xl border-2 border-theme bg-none py-5 text-center hover:bg-theme"
                     itemprop="offers" itemscope itemtype="http://schema.org/Offer">
@@ -274,7 +255,7 @@
             <div>
               <div class="mt-10 text-white">
                 <p itemprop="startDate">Torsdag 4/6</p>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid mt-4 grid-cols-2 lg:grid-cols-3 gap-4">
                   <div
                     class="cursor-pointer rounded-xl border-2 border-theme bg-none py-5 text-center hover:bg-theme" itemprop="offers" itemscope itemtype="http://schema.org/Offer"
                   >
@@ -302,7 +283,7 @@
 
             <div class="mt-4 text-white">
               <p itemprop="startDate">Fredag 5/6</p>
-              <div class="grid grid-cols-3 gap-4">
+              <div class="grid mt-4 grid-cols-2 lg:grid-cols-3 gap-4">
                 <div
                   class="cursor-pointer rounded-xl border-2 border-theme bg-none py-5 text-center hover:bg-theme" itemprop="offers" itemscope itemtype="http://schema.org/Offer"
                 >
@@ -341,7 +322,7 @@
             <div>
               <div class="mt-10 text-white">
                 <p itemprop="startDate">Torsdag 4/6</p>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid mt-4 grid-cols-2 lg:grid-cols-3 gap-4">
                   <div
                     class="cursor-pointer rounded-xl border-2 border-theme bg-none py-5 text-center hover:bg-theme" itemprop="offers" itemscope itemtype="http://schema.org/Offer"
                   >
@@ -361,7 +342,7 @@
 
               <div class="mt-4 text-white">
                 <p itemprop="startDate">Fredag 5/6</p>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid mt-4 grid-cols-2 lg:grid-cols-3 gap-4">
                   <div
                     class="cursor-pointer rounded-xl border-2 border-theme bg-none py-5 text-center hover:bg-theme" itemprop="offers" itemscope itemtype="http://schema.org/Offer"
                   >
@@ -387,7 +368,7 @@
             <div>
               <div class="mt-10 text-white">
                 <p itemprop="startDate">Fredag 5/6</p>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid mt-4 grid-cols-2 lg:grid-cols-3 gap-4">
                   <div
                     class="cursor-pointer rounded-xl border-2 border-theme bg-none py-5 text-center hover:bg-theme" itemprop="offers" itemscope itemtype="http://schema.org/Offer"
                   >
@@ -400,7 +381,7 @@
 
               <div class="mt-4 text-white">
                 <p itemprop="startDate">Lørdag 6/6</p>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid mt-4 grid-cols-2 lg:grid-cols-3 gap-4">
                   <div
                     class="cursor-pointer rounded-xl border-2 border-theme bg-none py-5 text-center hover:bg-theme" itemprop="offers" itemscope itemtype="http://schema.org/Offer"
                   >
@@ -435,7 +416,7 @@
             <div>
               <div class="mt-10 text-white">
                 <p itemprop="startDate">Fredag 5/6</p>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid mt-4 grid-cols-2 lg:grid-cols-3 gap-4">
                   <div
                     class="cursor-pointer rounded-xl border-2 border-theme bg-none py-5 text-center hover:bg-theme" itemprop="offers" itemscope itemtype="http://schema.org/Offer"
                   >
@@ -448,7 +429,7 @@
 
               <div class="mt-4 text-white">
                 <p itemprop="startDate">Lørdag 6/6</p>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid mt-4 grid-cols-2 lg:grid-cols-3 gap-4">
                   <div
                     class="cursor-pointer rounded-xl border-2 border-theme bg-none py-5 text-center hover:bg-theme" itemprop="offers" itemscope itemtype="http://schema.org/Offer"
                   >
@@ -481,7 +462,7 @@
             <div>
               <div class="mt-10 text-white">
                 <p itemprop="startDate">Fredag 5/6</p>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid mt-4 grid-cols-2 lg:grid-cols-3 gap-4">
                   <div
                     class="cursor-pointer rounded-xl border-2 border-theme bg-none py-5 text-center hover:bg-theme" itemprop="offers" itemscope itemtype="http://schema.org/Offer"
                   >
@@ -494,7 +475,7 @@
 
               <div class="mt-4 text-white">
                 <p itemprop="startDate">Lørdag 6/6</p>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid mt-4 grid-cols-2 lg:grid-cols-3 gap-4">
                   <div
                     class="cursor-pointer rounded-xl border-2 border-theme bg-none py-5 text-center hover:bg-theme" itemprop="offers" itemscope itemtype="http://schema.org/Offer"
                   >
