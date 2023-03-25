@@ -94,11 +94,9 @@ img {
 }
 
 /* CTA forside */
-.neon-button {
-  position: relative;
-}
 
-.neon-button::before {
+
+ .neon-button::before {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -115,11 +113,13 @@ img {
 }
 @media only screen and (max-width: 600px) {
   .neon-button::before {
-    top: 80%;
+    top: 65%;
     width: 70%;
     left: 15%;
+    opacity: 30%;
+    filter: blur(1.5em);
   }
-}
+} 
 
 :root {
   --clr-neon: #1f51ff;
@@ -177,3 +177,7 @@ img {
   background-color: transparent;
   border: none;
 }
+
+
+
+/* cookieboks css */

@@ -27,24 +27,23 @@ function close(){
 }
 
 // Cookie boks
-let menu = document.getElementById("menu");
-const showMenu = (flag) => {
-  menu.classList.toggle("hidden");
-};
 
-
-const cookieConsent = document.querySelector('#cookie-consent');
+  const cookieConsent = document.querySelector('#cookie-consent');
   const cookieAcceptButton = document.querySelector('#cookie-accept');
   const cookieDenyButton = document.querySelector('#cookie-deny');
+  const cookieSheerLayer = document.querySelector('#layer');
 
   cookieAcceptButton.addEventListener('click', () => {
     cookieConsent.remove();
+    cookieSheerLayer.remove();
   });
 
   cookieDenyButton.addEventListener('click', () => {
     cookieConsent.remove();
+    cookieSheerLayer.remove();
   });
 
+ 
 
 
   //knapper til billetsiden
