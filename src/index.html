@@ -40,8 +40,39 @@
         </span>
       </ul>
     </nav>
-    <div class="relative flex justify-center items-center">
+    <div id="layer" class="bg-gray-200 opacity-25 top-0 fixed z-9 w-full h-full"></div>
+    
+    <div id="cookie-consent" class="cookie_wrapper mx-10 fixed lg:top-72 top-32 z-10 rounded-xl border-2 border-theme2 bg-white object-center p-8 text-center shadow-md lg:w-1/2">
+      <!-- cookie content -->
+      <div class="content mt-2 ">
+        <header class="text-2xl font-bold">
+          Vi benytter cookies
+        </header>
+        
+        <p class="text-sm my-3 mx-5 text-black">
+          Vi bruger cookies på
+          vores website med henblik på
+          at huske din indkøbskurv,
+          personalisere din
+          brugeroplevelse og til at
+          undersøge, hvordan vores
+          hjemmeside bliver brugt.
+        </p>
+        <!-- cookieknapper -->
+        <div class="my-5 flex items-center justify-center gap-3">
+          <!-- afvis knap -->
+          <button id="cookie-deny" class="afvis text-md cursor-pointer rounded-md border-2 border-theme bg-white px-6 py-3 text-blue transition-all hover:bg-theme hover:font-bold hover:text-white">
+            ER PÅ KUR...
+          </button>
 
+          <!-- accepter knap -->
+          <button id="cookie-accept" class="accepter text-md cursor-pointer rounded-md bg-theme px-4 py-3 text-white transition-all hover:border-2 hover:border-blue hover:bg-white hover:font-bold hover:text-blue">
+            MMMMH MUMS!
+          </button>
+        </div>
+        <!-- cookie læs mere -->
+        <a href="cookies.html" class="item ml-5 text-black hover:text-theme hover:underline">Vis detaljer</a>
+      </div>
     </div>
     
    
@@ -59,6 +90,8 @@
         
     
     </main>
+
+    
 
     <footer class="bg-footer text-white py-8 w-full">
       <div class="container mx-auto flex flex-wrap justify-center text-center">
